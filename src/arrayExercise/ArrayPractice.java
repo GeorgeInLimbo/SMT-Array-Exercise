@@ -28,6 +28,7 @@ public class ArrayPractice {
 	
 	/**
 	 * Assigns randomly generated numbers to the array declared at the top of the class
+	 * @param arr
 	 */
 	public void generateNumbers(int[] arr) {
 		for (int i = 0; i < 10; i++) {
