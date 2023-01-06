@@ -17,9 +17,12 @@ import java.util.Arrays;
 public class ArrayPractice {
 	int[] numbers = new int[10];
 	
+	/**
+	 * Runs the program by executing the runCode() method
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		ArrayPractice list = new ArrayPractice();
-		
 		list.runCode();
 	}
 	
@@ -32,10 +35,17 @@ public class ArrayPractice {
 		}
 	}
 	
+	/**
+	 * Prints values of the array to the console
+	 */
 	public void displayNumbers() {
+		System.out.println("These 10 numbers were randomly generated:");
 		System.out.println(Arrays.toString(numbers));
 	}
 	
+	/**
+	 * Executes the generateNumbers() method and the displayNumbers() method
+	 */
 	public void runCode() {
 		generateNumbers();
 		displayNumbers();
