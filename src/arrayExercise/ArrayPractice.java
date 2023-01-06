@@ -23,32 +23,33 @@ public class ArrayPractice {
 	 */
 	public static void main(String[] args) {
 		ArrayPractice list = new ArrayPractice();
-		list.runCode();
+		list.runCode(list.numbers);
 	}
 	
 	/**
 	 * Assigns randomly generated numbers to the array declared at the top of the class
 	 */
-	public void generateNumbers() {
+	public void generateNumbers(int[] arr) {
 		for (int i = 0; i < 10; i++) {
-			numbers[i] = (int) (Math.random() * 100);
+			arr[i] = (int) (Math.random() * 100);
 		}
 	}
 	
 	/**
 	 * Prints values of the array to the console
+	 * @param arr
 	 */
-	public void displayNumbers() {
-		System.out.println("These 10 numbers were randomly generated:");
-		System.out.println(Arrays.toString(numbers));
+	public void displayNumbers(int[] arr) {
+		System.out.println(Arrays.toString(arr));
 	}
 	
 	/**
 	 * Executes the generateNumbers() method and the displayNumbers() method
+	 * @param arr
 	 */
-	public void runCode() {
-		generateNumbers();
-		displayNumbers();
+	public void runCode(int[] arr) {
+		generateNumbers(arr);
+		displayNumbers(arr);
 	}
 
 }
